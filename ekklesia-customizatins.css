@@ -1,0 +1,55 @@
+/* Float an image to the left */
+img.left {
+	float: left;
+	padding-right: 1em;
+}
+/* Float an image to the right */
+img.right {
+	float: right;
+	padding-left: 1em;
+}
+/* Add an icon for Online Giving. */
+.icon-giving:before {
+	content: "$";
+	font-weight: bold;
+}
+/* Add an icon for Pinterest */
+.icon-pinterest:before {
+	content: "P";
+	font-weight: bold;
+}
+/* Change the colors of the top links bar. Search form still needs work. */
+#mobile-open, #metanav {
+	background-color: rgba(33, 40, 41, 1);
+}
+#metanav .top-links li a, #search_term, #subnav > li > a, #subnav > li > ul > li > a:hover, #subnav > li > ul > li > ul > li > a:hover, #subnav > li > ul > li > ul > li.current > a {
+	color: #fff;
+}
+#searchForm {
+	background-color: rgba(254, 254, 254, 0.8);
+}
+/* On the homepage, can the second section of featured blog posts have an alternative layout? */
+body.homepage div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.widget.posts article.div-col-2 div.info.div-col {
+	float: right;
+	margin: 0 -5.88235% 0 0;
+}
+/* In dark sections, hyperlinks within text need to look like hyperlinks. */ 
+div.content-section.dark p a {
+	font-weight: bold;
+}
+/* Hide the All Articles Menu item that is needed for the Weekly Bullletin link to work. */
+li#nav-resources_resources_articles {
+	display: none;
+}
+/* Reduce padding above WYSIWYG Section Titles in Full-width sections, i.e. pages with index.php template. */
+#content .content-section .content-section-inner {
+	padding: 2em 5% 5em;
+}
+/* Adjusting the left margin when more than 9 items in a 3 column grid e.g. staff lists */
+#content .content-section .widget.featured article.pos-10, #content .content-section .widget.featured article.pos-13, #content .content-section .widget.featured article.pos-16, #content .content-section .widget.featured article.pos-19, #content .content-section .widget.featured article.pos-22 {
+	margin-left: 0;
+}
+/* Force Title Case for Headlines H1-H3 */
+H1, H2, H3 {
+	text-transform: capitalize;
+}
