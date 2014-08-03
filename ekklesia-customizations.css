@@ -49,7 +49,17 @@ li#nav-resources_resources_articles {
 #content .content-section .widget.featured article.pos-10, #content .content-section .widget.featured article.pos-13, #content .content-section .widget.featured article.pos-16, #content .content-section .widget.featured article.pos-19, #content .content-section .widget.featured article.pos-22 {
 	margin-left: 0;
 }
-/* Can we force Title Case for Headlines H1-H3. */
-H1, H2, H3 {
-	text-transform: capitalize;
+/* Changing the color of text "Search" in the search form.*/
+form#searchForm fieldset input#search_term.clearClick {
+	color: rgb(33, 40, 41);
+}
+/* From Monk to hide event groups */
+p.meta.group {
+	display: none;
+	visibility: hidden;
+}
+/* Hide page title over header image */
+div#billboard.hasimage h1 {
+	display: none;
+	visibility: hidden;
 }
