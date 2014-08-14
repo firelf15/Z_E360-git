@@ -2,7 +2,10 @@
   tag="event"
   display="list"
   order="recent"
-  howmany="3"
+  howmany="2"
+
+groupby="category"
+
   before_show="<div class='widget events div-col-3'>"
   show="<article class='div-col'>"
   show="<a href='__url__'>"
@@ -16,6 +19,25 @@
   show="<span class='location'>__location__</span>"
   show="</p>"
   show="</a>"
-  show="</article>"  
+  show="</article>" 
+  
+
+  after_show="<article class='div-col'>"
+  after_show="<a href='/happenings/events/list/category/'>"
+  after_show="<div class='date-wrap'>"
+  after_show="<span class='month'>Get</span>"
+  after_show="<span class='day'>All</span>"
+  after_show="</div>"
+
+
+  after_show="<h3>Events</h3>"
+  after_show="<p class='meta'>"
+  after_show="<span class='times'>Like These</span>"
+  after_show="</p>"
+
+
+  after_show="</a>"
+  after_show="</article>"
+
   after_show="</div>"
 }}
