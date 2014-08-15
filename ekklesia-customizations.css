@@ -38,7 +38,7 @@ div.content-section.dark p a {
 	font-weight: bold;
 }
 /* Hide the All Articles Menu item that is needed for the Weekly Bullletin link to work. */
-li#nav-resources_resources_articles {
+li#nav-events_happenings_news-articles {
 	display: none;
 }
 /* Reduce padding above WYSIWYG Section Titles in Full-width sections, i.e. pages with index.php template. */
