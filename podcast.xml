@@ -3,6 +3,7 @@
   <channel>
     <ttl>60</ttl>
     <title>Beaverton Foursquare Church</title>
+    <itunes:new-feed-url>http://b4church.org/mediafiles/sermons.xml</itunes:new-feed-url>
     <link>http://www.beavertonfoursquare.org</link>
     <description>Sunday Morning Services</description>
     <language>en-us</language>
