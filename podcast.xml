@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <ttl>60</ttl>
+    <title>Beaverton Foursquare Church</title>
+    <link>http://www.beavertonfoursquare.org</link>
+    <description>Sunday Morning Services</description>
+    <language>en-us</language>
+    <copyright>&#x2117;&amp;&#xA9;2006 Beaverton Foursquare Church</copyright>
+    <itunes:subtitle>Beaverton Foursquare: Sunday Morning Services</itunes:subtitle>
+    <itunes:author>Pastor Randy Remington</itunes:author>
+    <itunes:summary>Sometimes you just need a place to go. A place to feel welcomed among friends. A place to find answers to life's most difficult questions. A place to be encouraged to take that leap of faith into the extraordinary life God's Word promises. A place to just be in the presence of God. Beaverton Foursquare Church is such a place, so tune in and enjoy the service.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Randy Remington</itunes:name>
+      <itunes:email>pastor@beavertonfoursquare.org</itunes:email>
+    </itunes:owner>
+    <itunes:image href="http://media.b4square.com/mmedia/bfsc-pod.png" />
+    <itunes:category text="Religion &amp; Spirituality" />
+    <!--**************************************************************************-->
+<!--BEGIN ITEMS HERE-->
+<item><title>The Gospel and our Needs</title> <itunes:author>AJ Swoboda</itunes:author> <itunes:summary>AJ Swoboda: The Gospel and our Needs</itunes:summary> <enclosure url="http://media.b4square.com/mmedia/5166-lo.mp3" length="10646426" type="audio/x-mp3" /><guid>http://media.b4square.com/mmedia/5166-lo.mp3</guid> <pubDate>Sun, 17 Aug 2014 09:30:00 PDT</pubDate> <itunes:duration>44:07</itunes:duration> <itunes:keywords>Beaverton Foursquare Church, Pastor Randy Remington</itunes:keywords> </item>
+<item><title>The Gospel and Christian Work</title> <itunes:author>AJ Swoboda</itunes:author> <itunes:summary>AJ Swoboda: The Gospel and Christian Work</itunes:summary> <enclosure url="http://media.b4square.com/mmedia/5165-lo.mp3" length="9173433" type="audio/x-mp3" /><guid>http://media.b4square.com/mmedia/5165-lo.mp3</guid> <pubDate>Sun, 10 Aug 2014 09:30:00 PDT</pubDate> <itunes:duration>37:59</itunes:duration> <itunes:keywords>Beaverton Foursquare Church, Pastor Randy Remington</itunes:keywords> </item>
+<item><title>City on a Hill</title> <itunes:author>Mike Mercer</itunes:author> <itunes:summary>Mike Mercer: City on a Hill</itunes:summary> <enclosure url="http://media.b4square.com/mmedia/5164-lo.mp3" length="11103954" type="audio/x-mp3" /><guid>http://media.b4square.com/mmedia/5164-lo.mp3</guid> <pubDate>Sun, 03 Aug 2014 09:30:00 PDT</pubDate> <itunes:duration>46:02</itunes:duration> <itunes:keywords>Beaverton Foursquare Church, Pastor Randy Remington</itunes:keywords> </item>
+<item><title>Spirit Led Witness</title> <itunes:author>Randy Remington</itunes:author> <itunes:summary>Randy Remington: Spirit Led Witness</itunes:summary> <enclosure url="http://media.b4square.com/mmedia/5163-lo.mp3" length="11172660" type="audio/x-mp3" /><guid>http://media.b4square.com/mmedia/5163-lo.mp3</guid> <pubDate>Sun, 27 Jul 2014 09:30:00 PDT</pubDate> <itunes:duration>46:19</itunes:duration> <itunes:keywords>Beaverton Foursquare Church, Pastor Randy Remington</itunes:keywords> </item>
+<item><title>Baptism of the Holy Spirit</title> <itunes:author>Randy Remington</itunes:author> <itunes:summary>Randy Remington: Baptism of the Holy Spirit</itunes:summary> <enclosure url="http://media.b4square.com/mmedia/5162-lo.mp3" length="9844689" type="audio/x-mp3" /><guid>http://media.b4square.com/mmedia/5162-lo.mp3</guid> <pubDate>Sun, 20 Jul 2014 09:30:00 PDT</pubDate> <itunes:duration>40:47</itunes:duration> <itunes:keywords>Beaverton Foursquare Church, Pastor Randy Remington</itunes:keywords> </item>
+<item><title>The Holy Spirit and Humility</title> <itunes:author>AJ Swoboda</itunes:author> <itunes:summary>AJ Swoboda: The Holy Spirit and Humility</itunes:summary> <enclosure url="http://media.b4square.com/mmedia/5161-lo.mp3" length="9788477" type="audio/x-mp3" /><guid>http://media.b4square.com/mmedia/5161-lo.mp3</guid> <pubDate>Sun, 13 Jul 2014 09:30:00 PDT</pubDate> <itunes:duration>40:33</itunes:duration> <itunes:keywords>Beaverton Foursquare Church, Pastor Randy Remington</itunes:keywords> </item>
+<!--STOP ITEMS HERE-->
+    <!--**************************************************************************-->
+    <itunes:explicit>no</itunes:explicit>
+  </channel>
+</rss>

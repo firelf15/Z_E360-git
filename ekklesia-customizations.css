@@ -1,12 +1,16 @@
+/* Too much leading in the default h4 */
+h4 {
+	letter-spacing: 0.0625em;
+}
 /* Float an image to the left */
 img.left {
 	float: left;
-	padding-right: 1em;
+	padding-right: 1.65em;
 }
 /* Float an image to the right */
 img.right {
 	float: right;
-	padding-left: 1em;
+	padding-left: 1.65em;
 }
 /* Add an icon for Online Giving. */
 .icon-giving:before {
@@ -62,4 +66,42 @@ p.meta.group {
 div#billboard.hasimage h1 {
 	display: none;
 	visibility: hidden;
+}
+/* Block of images in sidebar, 2 columns. e.g. The static Instagram feed on the I'm New page */
+div.media-grid div.left {
+	float: left;
+	margin: 0 .25em .5em 0;
+}
+div.media-grid div.right {
+	float: right;
+	margin: 0 0 .5em .25em;
+}
+div.media-grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+div.media-grid img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: .25em;
+}
+/* AM/PM and other small caps */
+.small-cap {
+	font-variant: small-caps;
+}
+/***************************
+MEDIA QUERIES
+***************************/
+/* medium screen */
+@media only screen and (max-device-width : 768px) {
+div.media-grid {
+	max-width: 300px;
+}
+}
+/* small screen */
+@media only screen and (max-device-width : 479px) {
+img.left, img.right {
+	padding-bottom: 1em;
+}
 }
