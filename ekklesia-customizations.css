@@ -90,6 +90,13 @@ div.media-grid img {
 .small-cap {
 	font-variant: small-caps;
 }
+/* three columns for Google-Drive based photo galleries and such */
+article.b4-gallery {
+  -webkit-columns: 3 325px;
+     -moz-columns: 3 325px;
+          columns: 3 325px;
+}
+
 /***************************
 MEDIA QUERIES
 ***************************/
@@ -99,6 +106,7 @@ div.media-grid {
 	max-width: 300px;
 }
 }
+
 /* small screen */
 @media only screen and (max-device-width : 479px) {
 img.left, img.right {
