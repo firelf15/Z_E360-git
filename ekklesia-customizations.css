@@ -96,6 +96,10 @@ article.b4-gallery {
      -moz-columns: 3 325px;
           columns: 3 325px;
 }
+article.b4-gallery div.b4-col-1-3 {
+	display: inline-block;
+	clear: left;
+}
 
 /***************************
 MEDIA QUERIES
