@@ -1,104 +1,110 @@
 /* Too much leading in the default h4 */
 h4 {
-	letter-spacing: 0.0625em;
+  letter-spacing: 0.0625em;
 }
 /* Float an image to the left */
 img.left {
-	float: left;
-	padding-right: 1.65em;
+  float: left;
+  padding-right: 1.65em;
 }
 /* Float an image to the right */
 img.right {
-	float: right;
-	padding-left: 1.65em;
-}
-/* Add an icon for Online Giving. */
-.icon-giving:before {
-	content: "$";
-	font-weight: bold;
+  float: right;
+  padding-left: 1.65em;
 }
 /* Add an icon for Pinterest */
 .icon-pinterest:before {
-	content: "P";
-	font-weight: bold;
+  content: "P";
+  font-weight: bold;
+}
+/* Add an icon for Service Times */
+.icon-time::after {
+  font: sans-serif;
+  content: "T";
 }
 /* Change the colors of the top links bar. Search form still needs work. */
 #mobile-open, #metanav {
-	background-color: rgba(33, 40, 41, 1);
+  background-color: rgba(33, 40, 41, 1);
 }
 #metanav .top-links li a, #search_term, #subnav > li > a, #subnav > li > ul > li > a:hover, #subnav > li > ul > li > ul > li > a:hover, #subnav > li > ul > li > ul > li.current > a {
-	color: #fff;
+  color: #fff;
 }
 #searchForm {
-	background-color: rgba(254, 254, 254, 0.8);
+  background-color: rgba(254, 254, 254, 0.8);
 }
 /* On the homepage, can the second section of featured blog posts have an alternative layout? */
 body.homepage div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.widget.posts article.div-col-2 div.info.div-col {
-	float: right;
-	margin: 0 -5.88235% 0 0;
+  float: right;
+  margin: 0 -5.88235% 0 0;
 }
 /* In dark sections, hyperlinks within text need to look like hyperlinks. */ 
 div.content-section.dark p a {
-	font-weight: bold;
+  font-weight: bold;
 }
 /* Hide the All Articles Menu item that is needed for the Weekly Bullletin link to work. */
 li#nav-events_happenings_news-articles {
-	display: none;
+  display: none;
 }
 /* Reduce padding above WYSIWYG Section Titles in Full-width sections, i.e. pages with index.php template. */
 #content .content-section .content-section-inner {
-	padding: 2em 5% 5em;
+  padding: 2em 5% 5em;
 }
 /* Adjusting the left margin when more than 9 items in a 3 column grid e.g. staff lists */
 #content .content-section .widget.featured article.pos-10, #content .content-section .widget.featured article.pos-13, #content .content-section .widget.featured article.pos-16, #content .content-section .widget.featured article.pos-19, #content .content-section .widget.featured article.pos-22 {
-	margin-left: 0;
+  margin-left: 0;
 }
 /* Changing the color of text "Search" in the search form.*/
 form#searchForm fieldset input#search_term.clearClick {
-	color: rgb(33, 40, 41);
+  color: rgb(33, 40, 41);
 }
 /* From Monk to hide event groups */
 p.meta.group {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 /* Hide page title over header image */
 div#billboard.hasimage h1 {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 /* Block of images in sidebar, 2 columns. e.g. The static Instagram feed on the I'm New page */
 div.media-grid div.left {
-	float: left;
-	margin: 0 .25em .5em 0;
+  float: left;
+  margin: 0 .25em .5em 0;
 }
 div.media-grid div.right {
-	float: right;
-	margin: 0 0 .5em .25em;
+  float: right;
+  margin: 0 0 .5em .25em;
 }
 div.media-grid:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 div.media-grid img {
-	max-width: 100%;
-	height: auto;
-	margin-bottom: .25em;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: .25em;
 }
 /* AM/PM and other small caps */
 .small-cap {
-	font-variant: small-caps;
+  font-variant: small-caps;
 }
-/* three columns for Google-Drive based photo galleries and such */
-article.b4-gallery {
-  -webkit-columns: 3 325px;
-     -moz-columns: 3 325px;
-          columns: 3 325px;
+hr.b4 {
+  color: rgba(0, 0, 0, 0.08);
 }
-article.b4-gallery div.b4-col-1-3 {
-	display: inline-block;
-	clear: left;
+/* Life Group Listing needs more space between paragraphs */
+p.lifeGroup {
+  padding-bottom: 1em;
+  text-align: left;
+}
+/* Staff List With No Photos */
+#content ul.staff li.staff-list {
+  list-style : none;
+  margin-bottom: 1.5em;
+}
+#content ul.staff li.staff-list a {
+  font-size : 1.5em;
 }
 
 /***************************
@@ -107,13 +113,149 @@ MEDIA QUERIES
 /* medium screen */
 @media only screen and (max-device-width : 768px) {
 div.media-grid {
-	max-width: 300px;
+  max-width: 300px;
 }
 }
 
 /* small screen */
 @media only screen and (max-device-width : 479px) {
 img.left, img.right {
-	padding-bottom: 1em;
+  padding-bottom: 1em;
 }
+}
+/***************************
+GENERIC GRID LAYOUT
+***************************/
+/* Generic Grid Layout */
+
+#featured-items {
+  margin: 3em 0;
+  width: 100%;
+}
+.featured-item.end {
+  margin-right: 0;
+}
+.featured-item-image {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 1em;
+  text-decoration: none;
+  width: 100%;
+ *z-index: 0;
+}
+.featured-item-image img {
+  display: block;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.featured-item-image:hover img {
+  z-index: 0;
+}
+.featured-item-image img.featured-item-image-push {
+  width: 100%;
+  position: relative;
+}
+.featured-item-description {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 92%;
+  height: 88%;
+  padding: 6% 4%;
+}
+#content .featured-item-description p {
+  margin: 0;
+}
+.featured-item h3 {
+  margin: .125em 0;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* iPad and bigger screen */
+@media only screen and (min-device-width : 1024px) {
+.featured-item {
+  float: left;
+  width: 31.6%;
+  margin: 0 2.4% 3em 0;
+}
+.featured-item:nth-child(3n) {
+  margin: 0 0 3em 0;
+}
+.featured-item ul.media li {
+  margin-right: .25em;
+}
+.featured-item ul.media li:nth-child(3n) {
+  margin-right: 0;
+}
+}
+
+/* Medium Screens */
+@media only screen and (min-device-width : 640px) and (max-device-width : 1023px) {
+.featured-item {
+  float: left;
+  width: 47.5%;
+  margin: 0 2.3% 3em 0;
+}
+.featured-item h3 {
+  font-size: 1.25em;
+}
+.featured-item ul.media li:nth-child(odd) {
+  margin-right: .2em;
+}
+.featured-item ul.media li:nth-child(even) {
+  margin-right: 0;
+}
+}
+
+/* Small Screens */
+@media only screen and (max-device-width : 639px) {
+.featured-item {
+  float: left;
+  width: 97.6%;
+  margin: 0 2.4% 3em 0;
+}
+}
+.featured-item ul.media li.video, .featured-item ul.media li.listen, .featured-item ul.media li.download, .featured-item ul.media li.notes {
+  margin-right: .25em;
+}
+.item-row {
+  margin-bottom: 1em;
+  width: 100%;
+}
+/***************************
+CELEBRATION PAGE LAYOUT
+***************************/
+div.celebrate-photo {
+  width: 100%;
+  max-width: 1024px;
+}
+div.celebrate-photo img {
+  max-width: 480px;
+  width: 47%;
+  clear: none;
+}
+div.celebrate-photo img.left {
+  padding-right: 0;
+  margin-right: 1.5%;
+}
+div.celebrate-photo img.right {
+  padding-left: 0;
+  margin-left: 1.5%
+}
+p.resp1, p.resp3, p.resp5, p.resp7, p.resp9, p.resp11 {
+  color: #000;
+  display: inline-block;
+  float: left;
+}
+p.resp2, p.resp4, p.resp6, p.resp8, p.resp10, p.resp12 {
+  color: #444;
+  display: inline-block;
+  float: left;
 }

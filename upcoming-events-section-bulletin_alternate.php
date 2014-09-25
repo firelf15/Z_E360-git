@@ -11,7 +11,7 @@
   show="<span class='day'>__eventstartTwo format='j'__,</span> "
   show="<span class='times'>__eventstartThree format='g:iA'__</span> |  "
   show="<span class='location'>__location__</span> | "
-show="<span class='event-contact'>Contact: __coordname__</span>"
+show="<span class='event-contact'>Contact: __coordemail__</span>"
   show="</p>"
   show="</a>"
 show="<p>__description__</p>"
