@@ -180,25 +180,27 @@ GENERIC GRID LAYOUT
 
 /* iPad and bigger screen */
 @media only screen and (min-device-width : 1024px) {
-.featured-item {
+.featured-item, .staff-list {
   float: left;
   width: 31.6%;
+}
+.featured-item {
   margin: 0 2.4% 3em 0;
 }
-.featured-item:nth-child(3n) {
+.featured-item:nth-child(3n), .staff-list:nth-child(3n) {
   margin: 0 0 3em 0;
 }
-.featured-item ul.media li {
+.featured-item ul.media li, #content ul.staff li.staff-list {
   margin-right: .25em;
 }
-.featured-item ul.media li:nth-child(3n) {
+.featured-item ul.media li:nth-child(3n), #content ul.staff li.staff-list:nth-child(3n) {
   margin-right: 0;
 }
 }
 
 /* Medium Screens */
 @media only screen and (min-device-width : 640px) and (max-device-width : 1023px) {
-.featured-item {
+.featured-item, .staff-list {
   float: left;
   width: 47.5%;
   margin: 0 2.3% 3em 0;
@@ -206,21 +208,20 @@ GENERIC GRID LAYOUT
 .featured-item h3 {
   font-size: 1.25em;
 }
-.featured-item ul.media li:nth-child(odd) {
+.featured-item ul.media li:nth-child(odd), #content ul.staff li.staff-list:nth-child(odd) {
   margin-right: .2em;
 }
-.featured-item ul.media li:nth-child(even) {
+.featured-item ul.media li:nth-child(even), #content ul.staff li.staff-list:nth-child(even) {
   margin-right: 0;
 }
 }
 
 /* Small Screens */
 @media only screen and (max-device-width : 639px) {
-.featured-item {
+.featured-item, .staff-list {
   float: left;
   width: 97.6%;
   margin: 0 2.4% 3em 0;
-}
 }
 .featured-item ul.media li.video, .featured-item ul.media li.listen, .featured-item ul.media li.download, .featured-item ul.media li.notes {
   margin-right: .25em;
@@ -228,6 +229,7 @@ GENERIC GRID LAYOUT
 .item-row {
   margin-bottom: 1em;
   width: 100%;
+}
 }
 /***************************
 CELEBRATION PAGE LAYOUT
