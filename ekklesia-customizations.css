@@ -102,6 +102,8 @@ p.lifeGroup {
 #content ul.staff li.staff-list {
   list-style : none;
   margin-bottom: 1.5em;
+  padding-right: 1em;
+  height: 87px;
 }
 #content ul.staff li.staff-list a {
   font-size : 1.5em;
@@ -128,7 +130,7 @@ GENERIC GRID LAYOUT
 ***************************/
 /* Generic Grid Layout */
 
-#featured-items {
+#featured-items, #featured-items-sr, #featured-items-pm, #featured-items-ym, #featured-items-cm, #featured-items-op {
   margin: 3em 0;
   width: 100%;
 }
@@ -182,7 +184,7 @@ GENERIC GRID LAYOUT
 @media only screen and (min-device-width : 1024px) {
 .featured-item, .staff-list {
   float: left;
-  width: 31.6%;
+  width: 30.6%;
 }
 .featured-item {
   margin: 0 2.4% 3em 0;
@@ -226,7 +228,7 @@ GENERIC GRID LAYOUT
 .featured-item ul.media li.video, .featured-item ul.media li.listen, .featured-item ul.media li.download, .featured-item ul.media li.notes {
   margin-right: .25em;
 }
-.item-row {
+.item-row, .featured-item li {
   margin-bottom: 1em;
   width: 100%;
 }
