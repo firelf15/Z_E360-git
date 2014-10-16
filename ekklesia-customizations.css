@@ -133,6 +133,7 @@ GENERIC GRID LAYOUT
 #featured-items, #featured-items-sr, #featured-items-pm, #featured-items-ym, #featured-items-cm, #featured-items-op {
   margin: 3em 0;
   width: 100%;
+  text-transform: capitalize;
 }
 .featured-item.end {
   margin-right: 0;
