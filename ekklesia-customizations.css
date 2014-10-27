@@ -180,6 +180,21 @@ GENERIC GRID LAYOUT
   font-weight: bold;
   font-size: 1em;
 }
+/* responsive iframe for video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* iPad and bigger screen */
 @media only screen and (min-device-width : 1024px) {
@@ -187,7 +202,7 @@ GENERIC GRID LAYOUT
   float: left;
   width: 30.6%;
 }
-.featured-item {
+  .featured-item {
   margin: 0 2.4% 3em 0;
 }
 .featured-item:nth-child(3n), .staff-list:nth-child(3n) {
