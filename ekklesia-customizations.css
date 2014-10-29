@@ -37,9 +37,12 @@ body.homepage div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.c
   float: right;
   margin: 0 -5.88235% 0 0;
 }
-/* In dark sections, hyperlinks within text need to look like hyperlinks. */ 
-div.content-section.dark p a {
+/* In sections, hyperlinks within text need to look like hyperlinks. */ 
+div.container p a {
   font-weight: bold;
+}
+div.container a:hover {
+  text-decoration: underline;
 }
 /* Hide the All Articles Menu item that is needed for the Weekly Bullletin link to work. */
 li#nav-events_happenings_news-articles {
@@ -130,10 +133,13 @@ GENERIC GRID LAYOUT
 ***************************/
 /* Generic Grid Layout */
 
-#featured-items, #featured-items-sr, #featured-items-pm, #featured-items-ym, #featured-items-cm, #featured-items-op {
+#featured-items-sr, #featured-items-pm, #featured-items-ym, #featured-items-cm, #featured-items-op {
   margin: 3em 0;
   width: 100%;
   text-transform: capitalize;
+}
+#featured-items p.summary, {
+ text-transform: none;
 }
 .featured-item.end {
   margin-right: 0;
@@ -182,18 +188,18 @@ GENERIC GRID LAYOUT
 }
 /* responsive iframe for video */
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
 }
 .video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* iPad and bigger screen */
@@ -202,7 +208,7 @@ GENERIC GRID LAYOUT
   float: left;
   width: 30.6%;
 }
-  .featured-item {
+.featured-item {
   margin: 0 2.4% 3em 0;
 }
 .featured-item:nth-child(3n), .staff-list:nth-child(3n) {
