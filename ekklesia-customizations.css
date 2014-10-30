@@ -189,8 +189,8 @@ GENERIC GRID LAYOUT
 /* responsive iframe for video */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 35px;
+  padding-bottom: 54%;
+  padding-top: 0;
   height: 0;
   overflow: hidden;
 }
