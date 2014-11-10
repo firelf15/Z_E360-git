@@ -1,3 +1,13 @@
+/******************************************
+VENDOR RECOMNEDATION TO FIX "IPAD" CROWDING
+******************************************/
+.container {
+  padding: 0 2.5%;
+}
+
+/*****************
+B4CHURCH OVERRIDES
+*****************/
 /* Too much leading in the default h4 */
 h4 {
   letter-spacing: 0.0625em;
