@@ -122,6 +122,9 @@ p.lifeGroup {
 #content ul.staff li.staff-list a {
   font-size : 1.5em;
 }
+h6.staff-name {
+  font-family: "Open Sans", sans-serif;
+}
 
 /***************************
 MEDIA QUERIES
