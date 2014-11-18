@@ -3,29 +3,336 @@
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
+<style>
+/******************************************
+VENDOR RECOMNEDATION TO FIX "IPAD" CROWDING
+******************************************/
+.container {
+	padding: 0 2.5%;
+}
+/*****************
+B4CHURCH OVERRIDES
+*****************/
+/* Too much leading in the default h4 */
+h4 {
+	letter-spacing: 0.0625em;
+}
+/* Float an image to the left */
+img.left {
+	float: left;
+	padding-right: 1.65em;
+}
+/* Float an image to the right */
+img.right {
+	float: right;
+	padding-left: 1.65em;
+}
+/* Add an icon for Pinterest */
+.icon-pinterest:before {
+	content: "P";
+	font-weight: bold;
+}
+/* Add an icon for Service Times */
+.icon-time::after {
+	font: sans-serif;
+	content: "T";
+}
+/* Change the colors of the top links bar. Search form still needs work. */
+#mobile-open, #metanav {
+	background-color: rgba(33, 40, 41, 1);
+}
+#metanav .top-links li a, #search_term, #subnav > li > a, #subnav > li > ul > li > a:hover, #subnav > li > ul > li > ul > li > a:hover, #subnav > li > ul > li > ul > li.current > a {
+	color: #fff;
+}
+#searchForm {
+	background-color: rgba(254, 254, 254, 0.8);
+}
+/* On the homepage, can the second section of featured blog posts have an alternative layout? */
+body.homepage div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.widget.posts article.div-col-2 div.info.div-col {
+	float: right;
+	margin: 0 -5.88235% 0 0;
+}
+/* In sections, hyperlinks within text need to look like hyperlinks. */ 
+div.container p a {
+	font-weight: bold;
+}
+div.container a:hover {
+	text-decoration: underline;
+}
+/* Hide the All Articles Menu item that is needed for the Weekly Bullletin link to work. */
+li#nav-events_happenings_news-articles {
+	display: none;
+}
+/* Reduce padding above WYSIWYG Section Titles in Full-width sections, i.e. pages with index.php template. */
+#content .content-section .content-section-inner {
+	padding: 2em 5% 5em;
+}
+/* Adjusting the left margin when more than 9 items in a 3 column grid e.g. staff lists */
+#content .content-section .widget.featured article.pos-10, #content .content-section .widget.featured article.pos-13, #content .content-section .widget.featured article.pos-16, #content .content-section .widget.featured article.pos-19, #content .content-section .widget.featured article.pos-22 {
+	margin-left: 0;
+}
+/* Changing the color of text "Search" in the search form.*/
+form#searchForm fieldset input#search_term.clearClick {
+	color: rgb(33, 40, 41);
+}
+/* From Monk to hide event groups */
+p.meta.group {
+	display: none;
+	visibility: hidden;
+}
+/* Hide page title over header image */
+div#billboard.hasimage h1 {
+	display: none;
+	visibility: hidden;
+}
+/* Block of images in sidebar, 2 columns. e.g. The static Instagram feed on the I'm New page */
+div.media-grid div.left {
+	float: left;
+	margin: 0 .25em .5em 0;
+}
+div.media-grid div.right {
+	float: right;
+	margin: 0 0 .5em .25em;
+}
+div.media-grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+div.media-grid img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: .25em;
+}
+/* AM/PM and other small caps */
+.small-cap {
+	font-variant: small-caps;
+}
+hr.b4 {
+	color: rgba(0, 0, 0, 0.08);
+}
+/* Life Group Listing needs more space between paragraphs */
+p.lifeGroup {
+	padding-bottom: 1em;
+	text-align: left;
+}
+/* Staff List With Photos */
+#content ul.staff li.staff-list {
+	list-style : none;
+	margin-bottom: 1.5em;
+	padding-right: 1em;
+	height: auto;
+}
+#content ul.staff li.staff-list a {
+	font-size : 1.5em;
+}
+
+/***************************
+MEDIA QUERIES
+***************************/
+/* medium screen */
+@media only screen and (max-device-width : 768px) {
+div.media-grid {
+	max-width: 300px;
+}
+#content ul.staff li.staff-list img {
+	width: 225px;
+	height: 225px;
+}
+}
+
+/* small screen */
+@media only screen and (max-device-width : 479px) {
+img.left, img.right {
+	padding-bottom: 1em;
+}
+}
+/***************************
+GENERIC GRID LAYOUT
+***************************/
+/* Generic Grid Layout */
+
+#featured-items-sr, #featured-items-pm, #featured-items-ym, #featured-items-cm, #featured-items-op {
+	margin: 3em 0;
+	width: 100%;
+	text-transform: capitalize;
+}
+#featured-items p.summary, {
+ text-transform: none;
+}
+.featured-item.end {
+	margin-right: 0;
+}
+.featured-item-image {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 1em;
+	text-decoration: none;
+	width: 100%;
+ *z-index: 0;
+}
+.featured-item-image img {
+	display: block;
+	z-index: 2;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.featured-item-image:hover img {
+	z-index: 0;
+}
+.featured-item-image img.featured-item-image-push {
+	width: 100%;
+	position: relative;
+}
+.featured-item-description {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 92%;
+	height: 88%;
+	padding: 6% 4%;
+}
+#content .featured-item-description p {
+	margin: 0;
+}
+.featured-item h3 {
+	margin: .125em 0;
+	font-weight: bold;
+	font-size: 1em;
+}
+/* responsive iframe for video */
+.video-container {
+	position: relative;
+	padding-bottom: 54%;
+	padding-top: 0;
+	height: 0;
+	overflow: hidden;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* iPad and bigger screen */
+@media only screen and (min-device-width : 1024px) {
+.featured-item, .staff-list {
+	float: left;
+	width: 30.6%;
+}
+.featured-item {
+	margin: 0 2.4% 3em 0;
+}
+.featured-item:nth-child(3n), .staff-list:nth-child(3n) {
+	margin: 0 0 3em 0;
+}
+.featured-item ul.media li, #content ul.staff li.staff-list {
+	margin-right: .25em;
+}
+.featured-item ul.media li:nth-child(3n), #content ul.staff li.staff-list:nth-child(3n) {
+	margin-right: 0;
+}
+}
+
+/* Medium Screens */
+@media only screen and (min-device-width : 640px) and (max-device-width : 1023px) {
+.featured-item, .staff-list {
+	float: left;
+	width: 47.5%;
+	margin: 0 2.3% 3em 0;
+}
+.featured-item h3 {
+	font-size: 1.25em;
+}
+.featured-item ul.media li:nth-child(odd), #content ul.staff li.staff-list:nth-child(odd) {
+	margin-right: .2em;
+}
+.featured-item ul.media li:nth-child(even), #content ul.staff li.staff-list:nth-child(even) {
+	margin-right: 0;
+}
+}
+
+/* Small Screens */
+@media only screen and (max-device-width : 639px) {
+.featured-item, .staff-list {
+	float: left;
+	width: 97.6%;
+	margin: 0 2.4% 3em 0;
+}
+.featured-item ul.media li.video, .featured-item ul.media li.listen, .featured-item ul.media li.download, .featured-item ul.media li.notes {
+	margin-right: .25em;
+}
+.item-row, .featured-item li {
+	margin-bottom: 1em;
+	width: 100%;
+}
+}
+/***************************
+CELEBRATION PAGE LAYOUT
+***************************/
+div.celebrate-photo {
+	width: 100%;
+	max-width: 1024px;
+}
+div.celebrate-photo img {
+	max-width: 480px;
+	width: 47%;
+	clear: none;
+}
+div.celebrate-photo img.left {
+	padding-right: 0;
+	margin-right: 1.5%;
+}
+div.celebrate-photo img.right {
+	padding-left: 0;
+	margin-left: 1.5%
+}
+p.resp1, p.resp3, p.resp5, p.resp7, p.resp9, p.resp11 {
+	color: #000;
+	display: inline-block;
+	float: left;
+}
+p.resp2, p.resp4, p.resp6, p.resp8, p.resp10, p.resp12 {
+	color: #444;
+	display: inline-block;
+	float: left;
+}
+</style>
 </head>
 
 <body>
 <section id="featured-items-sr" class="clearfix">
   <h2>Senior Pastor's Office</h2>
   <ul class="senior-pastor staff">
-    <li class="staff-list"><a href="mailto:arankin@b4church.org">Adrienne Rankin</a><br />
+    <li class="staff-list"><a href="mailto:arankin@b4church.org"><img src="http://04a2b6671b6aa7e7d85d-6cbb784ed00298234c7113e6ab7991c6.r38.cf2.rackcdn.com/uploaded/s/0e3839542_1415746249_spadrienner.png"><br>
+      Adrienne Rankin</a><br />
       <span class="b4-role">Executive Pastor</span></li>
-    <li class="staff-list"><a href="mailto:dhull@b4church.org">Deb Hull</a><br />
+    <li class="staff-list"><a href="mailto:dhull@b4church.org"><img src="http://04a2b6671b6aa7e7d85d-6cbb784ed00298234c7113e6ab7991c6.r38.cf2.rackcdn.com/uploaded/s/0e3839544_1415746249_spdebh.png"><br>
+      Deb Hull</a><br />
       <span class="b4-role">Sr Pastor Admin Asst</span></li>
-    <li class="staff-list"><a href="mailto:gpotter@b4church.org">Gayle Potter</a><br />
+    <li class="staff-list"><a href="mailto:gpotter@b4church.org"><img src="http://04a2b6671b6aa7e7d85d-6cbb784ed00298234c7113e6ab7991c6.r38.cf2.rackcdn.com/uploaded/s/0e3839546_1415746249_spgaylep.png"><br>
+      Gayle Potter</a><br />
       <span class="b4-role">Sr Pastor Admin Asst</span></li>
-    <li class="staff-list"><a href="mailto:rremington@b4church.org">Randy Remington</a><br />
+    <li class="staff-list"><a href="mailto:rremington@b4church.org"><img src="http://04a2b6671b6aa7e7d85d-6cbb784ed00298234c7113e6ab7991c6.r38.cf2.rackcdn.com/uploaded/s/0e3839548_1415746249_sprandyr.png"><br>
+      Randy Remington</a><br />
       <span class="b4-role">Senior Pastor</span></li>
   </ul>
 </section>
+<div style="clear: both;"></div>
 <section id="featured-items-pm" class="clearfix">
   <h2>Pastoral Ministries</h2>
   <ul class="pastoral-ministries staff">
     <li class="staff-list"><a href="mailto:alessler@b4church.org">Alex Lessler</a><br />
-      <span class="b4-role">Connections & Young Adults Pastor</span></li>
+      <span class="b4-role">Connections &amp; Young Adults Pastor</span></li>
     <li class="staff-list"><a href="mailto:bmills@b4church.org">Brent Mills</a><br />
-      <span class="b4-role">Worship & Technology Pastor</span></li>
+      <span class="b4-role">Worship &amp; Technology Pastor</span></li>
     <li class="staff-list"><a href="mailto:dgill@b4church.org">Dan Gill</a><br />
       <span class="b4-role">Life Groups Pastor</span></li>
     <li class="staff-list"><a href="mailto:dmills@b4church.org">Debi Mills</a><br />
@@ -35,7 +342,7 @@
     <li class="staff-list"><a href="mailto:italamantes@b4church.org">Israel Talamantes</a><br />
       <span class="b4-role">Assisting Pastor, Worship</span></li>
     <li class="staff-list"><a href="mailto:jrobison@b4church.org">Jamie Robison</a><br />
-      <span class="b4-role">Assistant Director of Worship & Creative Arts</span></li>
+      <span class="b4-role">Assistant Director of Worship &amp; Creative Arts</span></li>
     <li class="staff-list"><a href="mailto:jshim@b4church.org">Janet Shim</a><br />
       <span class="b4-role">Mosaic Pastor</span></li>
     <li class="staff-list"><a href="mailto:jstillwell@b4church.org">Jeremy Stillwell</a><br />
@@ -59,7 +366,7 @@
     <li class="staff-list"><a href="mailto:mnicklas@b4church.org">Mark Nicklas</a><br />
       <span class="b4-role">Missions and Outreach Pastor</span></li>
     <li class="staff-list"><a href="mailto:mwatson@b4church.org">Marlece Watson</a><br />
-      <span class="b4-role">Women's Life Groups & Events Coordinator</span></li>
+      <span class="b4-role">Women's Life Groups &amp; Events Coordinator</span></li>
     <li class="staff-list"><a href="mailto:mmclaughlin@b4church.org">Michelle McLaughlin</a><br />
       <span class="b4-role">Missions Dept Admin Asst</span></li>
     <li class="staff-list"><a href="mailto:mspielman@b4church.org">Monika Spielman</a><br />
@@ -73,11 +380,12 @@
     <li class="staff-list"><a href="mailto:rpickrel@b4church.org">Ryan Pickrel</a><br />
       <span class="b4-role">Worship Leader</span></li>
     <li class="staff-list"><a href="mailto:smitchell@b4church.org">Steve Mitchell</a><br />
-      <span class="b4-role">Adult Discipleship & Communications Pastor</span></li>
+      <span class="b4-role">Adult Discipleship &amp; Communications Pastor</span></li>
     <li class="staff-list"><a href="mailto:wschreiner@b4church.org">William Schreiner</a><br />
       <span class="b4-role">College House Cook/Missions Asst</span></li>
   </ul>
 </section>
+<div style="clear: both;"></div>
 <section id="featured-items-ym" class="clearfix">
   <h2>Youth Ministries</h2>
   <ul class="youth-ministries staff">
@@ -92,9 +400,10 @@
     <li class="staff-list"><a href="mailto:mwhitaker@b4church.org">Michelle Whitaker</a><br />
       <span class="b4-role">Asst Pastor, High School</span></li>
     <li class="staff-list"><a href="mailto:snunez@b4church.org">Sam Nunez</a><br />
-      <span class="b4-role">Youth & College Pastor </span></li>
+      <span class="b4-role">Youth &amp; College Pastor </span></li>
   </ul>
 </section>
+<div style="clear: both;"></div>
 <section id="featured-items-cm" class="clearfix">
   <h2>Children's Ministries</h2>
   <ul class="childrens-ministries staff">
@@ -122,6 +431,7 @@
       <span class="b4-role">Early Childhood Pastor </span></li>
   </ul>
 </section>
+<div style="clear: both;"></div>
 <section id="featured-items-op" class="clearfix">
   <h2>Operations</h2>
   <ul class="operations staff">
