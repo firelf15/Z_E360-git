@@ -122,6 +122,14 @@ p.lifeGroup {
 #content ul.staff li.staff-list a {
   font-size : 1.5em;
 }
+h4.staff-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: .5em;
+}
 h6.staff-name {
   font-family: "Open Sans", sans-serif;
 }
