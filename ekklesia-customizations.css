@@ -4,7 +4,6 @@ VENDOR RECOMNEDATION TO FIX "IPAD" CROWDING
 .container {
   padding: 0 2.5%;
 }
-
 /*****************
 B4CHURCH OVERRIDES
 *****************/
@@ -111,7 +110,7 @@ p.lifeGroup {
   padding-bottom: 1em;
   text-align: left;
 }
-/* Staff List With No Photos */
+/* Staff List */
 #content ul.staff li.staff-list {
   list-style : none;
   margin-bottom: 1.5em;
@@ -132,6 +131,11 @@ h4.staff-name {
 }
 h6.staff-name {
   font-family: "Open Sans", sans-serif;
+}
+span.b4-role {
+  display: inline-block;
+  min-height: 2em;
+  text-transform: capitalize;
 }
 
 /***************************
