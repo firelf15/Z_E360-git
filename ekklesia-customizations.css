@@ -21,6 +21,9 @@ img.right {
   float: right;
   padding-left: 1.65em;
 }
+div.left {
+  text-align: left;
+}
 /* Add an icon for Pinterest */
 .icon-pinterest:before {
   content: "P";
@@ -52,6 +55,10 @@ div.container p a {
 }
 div.container a:hover {
   text-decoration: underline;
+}
+/* Unordered list items without bullets */
+.no-bullet {
+  list-style: none;
 }
 /* Hide the All Articles Menu item that is needed for the Weekly Bullletin link to work. */
 li#nav-events_happenings_news-articles {
@@ -299,7 +306,7 @@ div.celebrate-photo img.left {
 }
 div.celebrate-photo img.right {
   padding-left: 0;
-  margin-left: 1.5%
+  margin-left: 1.5%;
 }
 p.resp1, p.resp3, p.resp5, p.resp7, p.resp9, p.resp11 {
   color: #000;
@@ -310,4 +317,45 @@ p.resp2, p.resp4, p.resp6, p.resp8, p.resp10, p.resp12 {
   color: #444;
   display: inline-block;
   float: left;
+}
+/*********************
+Christmas, RNM, FDC 
+*********************/
+/* glass bock whilst monk works on the template */
+p.gb-200 {
+  display: block;
+  height: 200px;
+}
+/***************************
+Two Across Featured Links
+and other small items
+***************************/
+div.two-across {
+  width: 100%;
+  margin-top: 2em;
+}
+div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-1, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-2, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-3, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-4 {
+  width: 47%;
+  margin: 0 0 2em 0;
+}
+div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-1 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-2 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-3 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-4 a {
+  max-width: 320px;
+}
+div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-1, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-3 {
+  float: left;
+}
+div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-2, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-4 {
+  float: right;
+}
+div.two-across div.widget.featured article.pos-1 a, div.two-across div.widget.featured article.pos-3 a {
+  float: right;
+  margin-left: 2.5em;
+}
+div.two-across div.widget.featured article.pos-2 a, div.two-across div.widget.featured article.pos-4 a {
+  float: left;
+  margin-right: 2.5em;
+}
+div.two-across div.widget.featured article a span {
+  display: none;
+  visibility: hidden;
 }
