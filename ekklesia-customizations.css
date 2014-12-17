@@ -64,6 +64,11 @@ div.container a:hover {
 li#nav-events_happenings_news-articles {
   display: none;
 }
+div.short {
+  max-height: 1px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 /* Reduce padding above WYSIWYG Section Titles in Full-width sections, i.e. pages with index.php template. */
 #content .content-section .content-section-inner {
   padding: 2em 5% 5em;
@@ -237,54 +242,56 @@ GENERIC GRID LAYOUT
 
 /* iPad and bigger screen */
 @media only screen and (min-device-width : 1024px) {
-.featured-item, .staff-list {
+.featured-item, 
+.staff-list, 
+div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
   float: left;
   width: 30.6%;
 }
-.featured-item {
+.featured-item, div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
   margin: 0 2.4% 3em 0;
 }
-.featured-item:nth-child(3n), .staff-list:nth-child(3n) {
+.featured-item:nth-child(3n), .staff-list:nth-child(3n), div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article:nth-child(3n)  {
   margin: 0 0 3em 0;
 }
 .featured-item ul.media li, #content ul.staff li.staff-list {
   margin-right: .25em;
 }
-.featured-item ul.media li:nth-child(3n), #content ul.staff li.staff-list:nth-child(3n) {
+.featured-item ul.media li:nth-child(3n), #content ul.staff li.staff-list:nth-child(3n), div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article:nth-child(3n) {
   margin-right: 0;
 }
 }
 
 /* Medium Screens */
 @media only screen and (min-device-width : 640px) and (max-device-width : 1023px) {
-.featured-item, .staff-list {
+.featured-item, .staff-list, div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
   float: left;
-  width: 47.5%;
-  margin: 0 2.3% 3em 0;
+  width: 47.0%;
+  margin: 0 2.8% 3em 0;
 }
 .featured-item h3 {
   font-size: 1.25em;
 }
-.featured-item ul.media li:nth-child(odd), #content ul.staff li.staff-list:nth-child(odd) {
-  margin-right: .2em;
+.featured-item ul.media li:nth-child(odd), #content ul.staff li.staff-list:nth-child(odd), div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article:nth-child(odd) {
+  margin-right: .5em;
 }
-.featured-item ul.media li:nth-child(even), #content ul.staff li.staff-list:nth-child(even) {
+.featured-item ul.media li:nth-child(even), #content ul.staff li.staff-list:nth-child(even), div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article:nth-child(even) {
   margin-right: 0;
 }
 }
 
 /* Small Screens */
 @media only screen and (max-device-width : 639px) {
-.featured-item, .staff-list {
+.featured-item, .staff-list, div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
   float: left;
   width: 97.6%;
   margin: 0 2.4% 3em 0;
 }
-.featured-item ul.media li.video, .featured-item ul.media li.listen, .featured-item ul.media li.download, .featured-item ul.media li.notes {
+.featured-item ul.media li.video, .featured-item ul.media li.listen, .featured-item ul.media li.download, .featured-item ul.media li.notes, div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
   margin-right: .25em;
 }
-.item-row, .featured-item li {
-  margin-bottom: 1em;
+.item-row, .featured-item li, div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
+  margin-bottom: 2em;
   width: 100%;
 }
 }
@@ -326,10 +333,12 @@ p.gb-200 {
   display: block;
   height: 200px;
 }
-/***************************
+
+/**********************************
 Two Across Featured Links
-and other small items
-***************************/
+and other small items: screen > 600
+**********************************/
+@media only screen and (min-device-width : 600px) {
 div.two-across {
   width: 100%;
   margin-top: 2em;
@@ -355,7 +364,13 @@ div.two-across div.widget.featured article.pos-2 a, div.two-across div.widget.fe
   float: left;
   margin-right: 2.5em;
 }
+}
+/* Two Across Featured Links, Three Across Featured Links
+and other small items ALL devices */
 div.two-across div.widget.featured article a span {
   display: none;
   visibility: hidden;
+}
+div.b4-three-across div.widget.featured article a span {
+  text-shadow: 1px 1px 1px #000;
 }
