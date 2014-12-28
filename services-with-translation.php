@@ -1,0 +1,7 @@
+<p>Join us for our regularly scheduled services at 8:00, 9:30, and 11:15.</p>
+<p><strong>Children's Ministries:</strong> (infants through 5th grade) are available at all morning services.</p>
+<p><strong>6th Grade:</strong> meets during the 9:30 and 11:15 services. <br /><strong>Jr. High:</strong> meets during the 9:30 service.<br /><strong>High School:</strong> meets during the 11:15 service.<br /><strong>Language Translation:</strong> The 9:30 service is translated into Bhutanese, Chinese, Korean, and Spanish. Pick up a headset at Next Steps.</p>
+<p>每周9:30am主日崇拜有不丹語, 華語(普通话)，韩语和西班牙语的同步翻譯服務,請到Next Step 索取耳機。</p>
+<p>주일 오전 9:30 예배시에 한국어 중국어 부탄어 스페인어로 동시 통역 됩니다. 통역 헤드셋트는 중앙 로비에서 픽업 하세요</p>
+<p>El servicio de las 9:30 se traduce a bhutan&eacute;s, mandar&iacute;n chino, coreano y espa&ntilde;ol. Recoja un radio traductor en el area Next Steps.</p>
+<p><strong>Parking:</strong> If you've had difficulty finding a parking space on Sunday mornings, please remember that our parking lot across Walker Road from the church makes the search simpler and the walk shorter. The gates to that lot will be locked at about 1:00 p.m. Please drive carefully and park only in designated spaces. Your thoughtfulness is appreciated.</p>
