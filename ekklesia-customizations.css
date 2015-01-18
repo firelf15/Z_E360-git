@@ -348,7 +348,7 @@ div#content.fullwidth div.content-section div.content-section-inner div.containe
   margin: 0 0 2em 0;
 }
 div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-1 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-2 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-3 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-4 a {
-  max-width: 320px;
+  max-width: 500px;
 }
 div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-1, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-3 {
   float: left;
