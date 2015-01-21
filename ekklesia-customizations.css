@@ -7,6 +7,10 @@ VENDOR RECOMNEDATION TO FIX "IPAD" CROWDING
 /*****************
 B4CHURCH OVERRIDES
 *****************/
+/* Make ALL the bullets go away */
+#content ul li {
+  list-style: outside none none;
+}
 /* Too much leading in the default h4 */
 h4 {
   letter-spacing: 0.0625em;
@@ -116,6 +120,17 @@ div.media-grid img {
 }
 hr.b4 {
   color: rgba(0, 0, 0, 0.08);
+}
+/* Frequently Asked Questions */
+ul.faqs {
+  text-align: left;
+}
+.faq-q {
+  font-weight: bold;
+}
+.faq-a {
+  font-style: italic;
+  padding-bottom: .5em;
 }
 /* Life Group Listing needs more space between paragraphs */
 p.lifeGroup {
@@ -242,16 +257,14 @@ GENERIC GRID LAYOUT
 
 /* iPad and bigger screen */
 @media only screen and (min-device-width : 1024px) {
-.featured-item, 
-.staff-list, 
-div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
+.featured-item, .staff-list, div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
   float: left;
   width: 30.6%;
 }
 .featured-item, div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article {
   margin: 0 2.4% 3em 0;
 }
-.featured-item:nth-child(3n), .staff-list:nth-child(3n), div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article:nth-child(3n)  {
+.featured-item:nth-child(3n), .staff-list:nth-child(3n), div#outer-wrap div#wrap div#inner-wrap div#content.fullwidth div.content-section.dark div.content-section-inner div.container div.clearfix div.b4-three-across div.widget.featured article:nth-child(3n) {
   margin: 0 0 3em 0;
 }
 .featured-item ul.media li, #content ul.staff li.staff-list {
@@ -348,7 +361,7 @@ div#content.fullwidth div.content-section div.content-section-inner div.containe
   margin: 0 0 2em 0;
 }
 div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-1 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-2 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-3 a, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-4 a {
-  max-width: 320px;
+  max-width: 500px;
 }
 div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-1, div#content.fullwidth div.content-section div.content-section-inner div.container div.two-across div.widget.featured article.pos-3 {
   float: left;
