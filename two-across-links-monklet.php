@@ -7,7 +7,7 @@
   show="__ifnewwindow__target='_blank'"
   show=" href='__url__'"
   show=">"
-  show="<img src='__imageurl width='320' height='160'__' alt='' />"
+  show="<img src='__imageurl width='500' height='250'__' alt='' />"
   show="<span>__name__</span>"
   show="</a>"
   show="</article>"
